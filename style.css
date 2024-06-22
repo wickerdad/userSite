@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/*----- REMOVE BLUE HIGHLIGHT ON TOUCH -----*/
+*:hover,
+*:focus,
+*:focus-visible,
+*:active {
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+:root {
+  --ui-000: #f9f9fa;
+  --ui-00: #f4f4f6;
+  --ui-0: #ececef;
+  --ui-1: #dedee3;
+  --ui-2: #d0d0d7;
+  --ui-3: #c2c2cb;
+  --ui-4: #b5b5c0;
+  --ui-5: #a7a7b4;
+  --ui-6: #9999a8;
+  --ui-7: #8b8b9c;
+  --ui-8: #7e7e91;
+  --ui-9: #717184;
+  --ui-10: #656576;
+  --ui-11: #595969;
+  --ui-12: #4d4d5b;
+  --ui-13: #42424d;
+  --ui-14: #36363f;
+  --ui-15: #2a2a32;
+  --ui-16: #1e1e24;
+  --ui-17: #131316;
+  --ui-18: #060607;
+  --ui-19: #070708;
+
+
+  --primary-0: #e9e7fe;
+  --primary-1: #dbd8fd;
+  --primary-2: #cecafc;
+  --primary-3: #c1bbfb;
+  --primary-4: #b3adfb;
+  --primary-5: #a69efa;
+  --primary-6: #9890f9;
+  --primary-7: #8b81f8;
+  --primary-8: #7e72f8;
+  --primary-9: #7064f7;
+  --primary-10: #6355f6;
+  --primary-11: #5547f5;
+  --primary-12: #4838f5;
+  --primary-13: #3b2af4;
+  --primary-14: #2d1bf3;
+  --primary-15: #200df2;
+  --primary-16: #1e0ce4;
+  --primary-17: #1c0bd5;
+  --primary-18: #1a0ac7;
+  --primary-19: #180ab8;
+  --primary-20: #1609aa;
+  --primary-21: #14089b;
+  --primary-22: #12078d;
+  --primary-23: #11077e;
+  --primary-24: #0f066f;
+  --primary-25: #0d0561;
+  --primary-26: #0b0452;
+  --primary-27: #090444;
+  --primary-28: #070335;
+  --primary-29: #050227;
+  --primary-30: #030118;
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--primary-13);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.5;
+  color: var(--ui-13);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5em;
+  line-height: 1.25em;
+  color: var(--ui-16);
+}
+
+h1 {
+  font-size: 2.625rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+p {
+  margin-bottom: 1.5em;
+  color: var(--ui-14);
+}
+
+/*---------- Content Styles ----------*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem;
+  width: 100%;
+  min-height: 100%;
+}
+
+.label-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.label-row .ph {
+  font-size: 1rem;
+}
+
+/*---------- Tooltip Styles ----------*/
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-text {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.3em;
+  border: 2px solid var(--ui-0);
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 9px -3px rgba(0, 0, 0, 0.1);
+}

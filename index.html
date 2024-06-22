@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tulip</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <main>
+
+    <button class="tooltip" role="tooltip" aria-describedby="Home" onmouseenter="tooltip(this)">
+      <i class="ph ph-house"></i>
+    </button>
+
+    <span class="tooltip" role="tooltip" aria-describedby="Here's the text I want to include in the tooltip."
+      onmouseenter="tooltip(this)">
+      <i class="ph ph-info"></i>
+    </span>
+
+
+    <div class="label-row tooltip" role="tooltip" aria-describedby="Here's the text I want to include in the tooltip."
+      onmouseenter="tooltip(this)">
+      <span>Label text maybe</span>
+      <span>
+        <i class="ph ph-info"></i>
+      </span>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
